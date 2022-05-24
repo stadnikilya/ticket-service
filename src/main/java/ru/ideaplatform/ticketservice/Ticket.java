@@ -1,13 +1,12 @@
 package ru.ideaplatform.ticketservice;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import ru.ideaplatform.ticketservice.interfaces.ITicket;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Ticket implements ITicket {
+public class Ticket {
     private String origin;
     @JsonProperty("origin_name")
     private String originName;
@@ -132,7 +131,6 @@ public class Ticket implements ITicket {
         this.price = price;
     }
 
-    @Override
     public long getTravelDuration() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yy hh:mm");
         Date departureDateTime = sdf.parse(this.departureDate + " " + this.departureTime);
