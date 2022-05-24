@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Tickets</groupId>
-    <artifactId>Tickets</artifactId>
-    <name>Tickets</name>
+    <groupId>ticket-service</groupId>
+    <artifactId>ticket-service</artifactId>
+    <name>ticket-service</name>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -36,7 +36,7 @@
                     <archive>
                         <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
                         <manifest>
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>ru.ideaplatform.ticketservice.Main</mainClass>
                         </manifest>
                     </archive>
                     <outputDirectory>libs</outputDirectory>
@@ -70,5 +70,12 @@
             <artifactId>maven-jar-plugin</artifactId>
             <version>3.2.2</version>
         </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/ru.vyarus/gradle-quality-plugin &ndash;&gt;
+        <dependency>
+            <groupId>ru.vyarus</groupId>
+            <artifactId>gradle-quality-plugin</artifactId>
+            <version>4.7.0</version>
+        </dependency>-->
+
     </dependencies>
 </project>
