@@ -2,10 +2,12 @@ package ru.ideaplatform.ticketservice;
 
 import ru.ideaplatform.ticketservice.util.Util;
 
+import java.io.File;
 import java.util.List;
 
 public class Main {
-    public static final String PATH = ".\\src\\main\\resources\\tickets.json";
+    public static final String separator = File.separator;
+    public static final String PATH = "." + separator + "src" + separator + "main" + separator + "resources" + separator + "tickets.json";
     public static final String ORIGIN = "VVO";
     public static final String DESTINATION = "TLV";
     public static final int PERCENT = 90;
